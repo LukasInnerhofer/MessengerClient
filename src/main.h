@@ -7,12 +7,15 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <exception>
+#include <stdexcept>
 #include <algorithm>
-
-#define API_URL "10.8.0.2:9090/Messenger/webapi"
+#include <map>
+#include <functional>
 
 template<typename T>
-bool vectorContains(const std::vector<T> vector, const T element);
+void validateRequestedMethod(const std::vector<T> &availableMethods, const T &requestedMethod);
+
+template<typename T>
+bool vectorContains(const std::vector<T> &vector, const T &element);
 
 #endif // MAIN_H

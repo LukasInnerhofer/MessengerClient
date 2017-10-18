@@ -16,7 +16,7 @@ namespace restClient
 		}
 	}
 	
-	std::string GET(const std::string &url)
+	std::string GET(const std::string &url, const std::string &getData)
 	{
 		data = "";
 		CURL *curl = curl_easy_init();

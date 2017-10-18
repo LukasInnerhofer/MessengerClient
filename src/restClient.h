@@ -13,7 +13,7 @@ namespace restClient
 		
 		size_t writeCallback(const char * const buffer, const size_t size, const size_t nBytes, void *up);
 	}
-	std::string GET(const std::string &url);
+	std::string GET(const std::string &url, const std::string &getData = "");
 	std::string POST(const std::string &url, const std::string &postData = "");
 	std::string PUT(const std::string &url, const std::string &putData = "");
 	std::string DELETE(const std::string &url, const std::string &deleteData = "");
